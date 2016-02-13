@@ -1,0 +1,23 @@
+{
+    "name":        "joshtronic/php-sortbyfield",
+    "description": "Sort an array of arrays by a field",
+    "version":     "1.0.0",
+    "type":        "utility",
+    "keywords":    ["array", "sort", "field", "key"],
+    "homepage":    "https://github.com/joshtronic/php-sortbyfield",
+    "license":     "MIT",
+    "authors": [{
+        "name":     "Josh Sherman",
+        "email":    "hello@joshtronic.com",
+        "homepage": "http://joshtronic.com"
+    }],
+    "require-dev": {
+        "php": ">=4.0.0"
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"joshtronic\\": "src/"}
+    }
+}

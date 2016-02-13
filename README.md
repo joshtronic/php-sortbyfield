@@ -1,4 +1,2 @@
-php-sort
-========
+# php-sortbyfield
 
-Array sorting utilities that will melt your face

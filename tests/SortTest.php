@@ -20,7 +20,7 @@ class SortTest extends PHPUnit_Framework_TestCase
             ['name' => 'gamma'],
         ];
 
-        Pickles\Sort::by('name', $shuffled);
+        joshtronic\Sort::by('name', $shuffled);
 
         $this->assertEquals($sorted, $shuffled);
     }
@@ -43,7 +43,7 @@ class SortTest extends PHPUnit_Framework_TestCase
             ['name' => 'alpha'],
         ];
 
-        Pickles\Sort::by('name', $shuffled, Pickles\Sort::DESC);
+        joshtronic\Sort::by('name', $shuffled, -1);
 
         $this->assertEquals($sorted, $shuffled);
     }
@@ -53,7 +53,7 @@ class SortTest extends PHPUnit_Framework_TestCase
         $shuffled = [['foo' => 'bar', 'bar' => 'foo']];
         $sorted   = [['foo' => 'bar', 'bar' => 'foo']];
 
-        Pickles\Sort::by('name', $shuffled);
+        joshtronic\Sort::by('name', $shuffled);
 
         $this->assertEquals($sorted, $shuffled);
     }
